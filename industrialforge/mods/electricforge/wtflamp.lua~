@@ -1,0 +1,13 @@
+local placelamp = function( pos, node, placer)
+	if node.name ~= 'electricforge:lamp' then return end
+	undpos = { x = pos.x, y = pos.y - 1, z = pos.z }
+	pos = { x = pos.x, y = pos.y, z = pos.z }
+	under = minetest.env:get_node( undpos )
+
+	if under.name ~= 'electricforge:lamppole' then 
+		minetest.env:remove_node( pos )
+		minetest.env:add_item(pos, "electricforge:lamp")
+	end
+end
+minetest.register_on_placenode( placelamp )
+

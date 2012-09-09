@@ -1,0 +1,12 @@
+local activateraffinery = function( pos, node, puncher)
+		if node.name ~= 'electricforge:raffinery' then return end
+			nodedrop = { x = pos.x, y = pos.y+1, z = pos.z }
+			if puncher:get_inventory():contains_item("main", "oil:bucket_oil") then
+				puncher:get_inventory():remove_item("main", "oil:bucket_oil")
+					--GIVING
+					minetest.env:add_item(nodedrop, 'electricforge:oilplate')
+					minetest.env:add_item(nodedrop, 'bucket:bucket_empty')
+			end
+		end
+
+minetest.register_on_punchnode( activateraffinery )

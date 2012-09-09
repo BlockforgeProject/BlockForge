@@ -1,0 +1,18 @@
+minetest.register_craft({
+	type = "cooking",
+	output = "electricforge:industrial_iron",
+	recipe = "default:steel_ingot",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "electricforge:flint",
+	recipe = "default:gravel",
+})
+
+minetest.register_craft({
+
+	type = "cooking",
+	output = "default:steel_ingot",
+	recipe = "electricforge:iron_sand",
+})

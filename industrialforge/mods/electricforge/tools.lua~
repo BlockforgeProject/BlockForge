@@ -1,0 +1,15 @@
+
+
+minetest.register_tool("electricforge:chainsaw", {
+    image = "if_chainsaw.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level=1,
+		groupcaps={
+			fleshy={times={[2]=0.60, [3]=0.10}, maxwear=0.02, maxlevel=3},
+			choppy={times={[1]=0.50, [2]=0.30, [3]=0.10}, maxwear=0.1, maxlevel=2},
+			fleshy={times={[2]=0.60, [3]=0.40}, maxwear=0.02, maxlevel=1}
+		}
+	}
+})
+

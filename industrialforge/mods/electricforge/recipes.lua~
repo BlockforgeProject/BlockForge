@@ -1,0 +1,114 @@
+
+
+--RECIPES
+minetest.register_craft({
+	output = 'electricforge:electroblock 1',
+	recipe = {
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+		{'moreores:copper_ingot', 'oil:bucket_oil', 'moreores:copper_ingot'},
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:controlpanel 1',
+	recipe = {
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+		{'default:steel_ingot', 'moreores:tin_ingot', 'default:steel_ingot'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:coal_lump 1',
+	recipe = {
+		{'electricforge:oilplate', '', ''},
+		{'electricforge:oilplate', '', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:electrodrill 1',
+	recipe = {
+		{'', 'electricforge:industrial_iron', ''},
+		{'electricforge:industrial_iron', '', 'electricforge:industrial_iron'},
+		{'electricforge:industrial_iron', '', 'electricforge:industrial_iron'},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:raffinery 1',
+	recipe = {
+		{'electricforge:industrial_iron', 'electricforge:electrodrill', 'electricforge:industrial_iron'},
+		{'electricforge:industrial_iron', 'electricforge:electroblock', 'electricforge:industrial_iron'},
+		{'gunmod:compressed_coal', 'electricforge:controlpanel', 'gunmod:compressed_coal'},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:quarrydrill 5',
+	recipe = {
+		{'', 'electricforge:industrial_iron', ''},
+		{'electricforge:industrial_iron', 'electricforge:electrodrill', 'electricforge:industrial_iron'},
+		{'', 'gunmod:compressed_coal', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:quarry 1',
+	recipe = {
+		{'', 'electricforge:electrodrill', '' },
+		{'electricforge:electrodrill', 'electricforge:electroblock', 'electricforge:electrodrill'},
+		{'', 'electricforge:controlpanel', ''},
+
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:intbattery 1',
+	recipe = {
+		{'electricforge:industrial_iron', 'electricforge:industrial_iron', 'electricforge:industrial_iron'},
+		{'gunmod:compressed_coal', 'gunmod:compressed_coal', 'gunmod:compressed_coal'},
+		{'electricforge:industrial_iron', 'electricforge:industrial_iron', 'electricforge:industrial_iron'},
+	}
+})
+
+
+minetest.register_craft({
+	output = 'electricforge:chainsaw 1',
+	recipe = {
+		{'', 'electricforge:industrial_iron', ''},
+		{'electricforge:industrial_iron', 'electricforge:intbattery', 'electricforge:industrial_iron'},
+		{'electricforge:industrial_iron', 'electricforge:controlpanel', 'electricforge:industrial_iron'},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:macerator 1',
+	recipe = {
+		{'electricforge:electrodrill', 'electricforge:oilplate', 'electricforge:electrodrill' },
+		{'electricforge:electrodrill', 'electricforge:electroblock', 'electricforge:electrodrill'},
+		{'bucket:bucket_empty', 'electricforge:controlpanel', 'bucket:bucket_empty'},
+
+	}
+})
+
+
+
+
+minetest.register_craft({
+	output = 'electricforge:lamppole 2',
+	recipe = {
+		{'electricforge:industrial_iron', '', 'electricforge:industrial_iron'},
+		{'electricforge:industrial_iron', '', 'electricforge:industrial_iron'},
+	}
+})
+
+minetest.register_craft({
+	output = 'electricforge:lamp 1',
+	recipe = {
+		{'electricforge:industrial_iron', 'electricforge:industrial_iron', 'electricforge:industrial_iron'},
+		{'electricforge:industrial_iron', 'default:furnace', 'electricforge:industrial_iron'},
+		{'gunmod:compressed_coal', 'gunmod:compressed_coal', 'gunmod:compressed_coal'},
+	}
+})
+

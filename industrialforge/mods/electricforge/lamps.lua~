@@ -1,0 +1,26 @@
+minetest.register_node("electricforge:lamppole", {
+	tile_images = {"if_lamppole1.png","if_lamppole1.png",
+		  "if_lamppole1.png","if_lamppole1.png",
+		  "if_lamppole1.png","if_lamppole1.png"},
+	drawtype = "fencelike",
+	paramtype = "light",
+	inventory_image = {"blockbreaker_top.png"},
+	minetest.inventorycube("if_lamppole1.png"),
+	is_ground_content = false,
+	groups = {cracky=3},
+	description = "Lamp Pole",
+})
+
+minetest.register_node("electricforge:lamp", {
+	tile_images = {"if_lamppole2.png","if_lamppole2.png",
+		  "if_lamplight.png","if_lamplight.png",
+		  "if_lamplight.png","if_lamplight.png"},
+	paramtype = "light",
+	light_source = 10000000,
+	inventory_image = {"if_lamplight.png"},
+	minetest.inventorycube("if_lamplight.png"),
+	is_ground_content = false,
+	groups = {crumbly=2},
+	description = "Electric Lamp",
+})
+dofile(minetest.get_modpath("electricforge") .. "/wtflamp.lua")

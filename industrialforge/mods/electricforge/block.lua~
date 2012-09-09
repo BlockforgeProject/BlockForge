@@ -1,0 +1,9 @@
+
+minetest.register_node("electricforge:electroblock", {
+	tile_images = {"if_electroblock.png","if_electroblock.png",
+		      "if_electroblock.png","if_electroblock.png",
+		      "if_electroblock.png","if_electroblock.png"},
+	inventory_image = "if_electroblock.png",
+        groups = {crumbly=1},
+})
+

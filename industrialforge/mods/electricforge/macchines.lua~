@@ -1,0 +1,44 @@
+
+minetest.register_node("electricforge:quarry", {
+	tile_images = {"quarry_top.png","quarry_side.png",
+		  "quarry_side.png","quarry_side.png",
+		  "quarry_side.png","quarry_side.png"},
+	inventory_image = {"quarry_top.png"},
+	minetest.inventorycube("quarry_top.png"),
+	is_ground_content = false,
+	groups = {crumbly=2},
+})
+
+minetest.register_node("electricforge:quarrydiggerpole", {
+	tile_images = {"quarrypole.png"},
+	drawtype = "fencelike",
+	paramtype = "light",
+	inventory_image = {"quarrypole.png"},
+	minetest.inventorycube("quarrypole.png"),
+	is_ground_content = false,
+	groups = {crumbly=2},
+})
+
+
+minetest.register_node("electricforge:raffinery", {
+	tile_images = {"raffinery_top.png","bb_side.png",
+		  "bb_side.png","bb_side.png",
+		  "bb_side.png","bb_side.png"},
+	inventory_image = {"raffinery_top.png"},
+	description = "Refinery",
+	minetest.inventorycube("raffinery_top.png"),
+	is_ground_content = false,
+	groups = {crumbly=2},
+})
+
+minetest.register_node("electricforge:macerator", {
+	tile_images = {"macerator_top.png","bb_side.png",
+		  "bb_side.png","bb_side.png",
+		  "bb_side.png","bb_side.png"},
+	inventory_image = {"macerator_top.png"},
+
+	minetest.inventorycube("macerator_top.png"),
+	is_ground_content = false,
+	groups = {crumbly=10},
+})
+

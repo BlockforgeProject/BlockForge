@@ -1,0 +1,19 @@
+
+
+minetest.register_craftitem("electricforge:industrial_iron", {
+	image = "industrial_iron.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Industrial Iron ingot"
+})
+
+minetest.register_craftitem("electricforge:oilplate", {
+	image = "if_oilplate.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Oil Plate"
+})
+
+minetest.register_craftitem("electricforge:iron_sand", {
+	image = "ironsand.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Iron Sand"
+})

@@ -1,0 +1,7 @@
+minetest.register_craftitem("electricforge:intbattery", {
+	image = "if_intbat.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Internal Battery"
+})
+
+

@@ -1,0 +1,12 @@
+
+local activatemacerator= function( pos, node, puncher)
+		if node.name ~= 'electricforge:macerator' then return end
+			nodedrop = { x = pos.x, y = pos.y+1, z = pos.z }
+			if puncher:get_inventory():contains_item("main", "default:stone_with_iron") then
+				puncher:get_inventory():remove_item("main", "default:stone_with_iron")
+					--GIVING
+					minetest.env:add_item(nodedrop, 'electricforge:iron_sand')
+					minetest.env:add_item(nodedrop, 'electricforge:iron_sand')
+			end
+end
+minetest.register_on_punchnode( activatemacerator )

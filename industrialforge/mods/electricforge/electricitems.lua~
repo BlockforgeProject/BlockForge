@@ -1,0 +1,26 @@
+
+minetest.register_node("electricforge:electroblock", {
+	tile_images = {"if_electroblock.png","if_electroblock.png",
+		      "if_electroblock.png","if_electroblock.png",
+		      "if_electroblock.png","if_electroblock.png"},
+	inventory_image = "if_electroblock.png",
+        groups = {crumbly=1},
+})
+
+minetest.register_craftitem("electricforge:controlpanel", {
+	image = "if_controlpanel.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Control Panel"
+})
+
+minetest.register_craftitem("electricforge:industrial_iron", {
+	image = "industrial_iron.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Industrial Iron ingot"
+})
+
+minetest.register_craftitem("electricforge:oilplate", {
+	image = "if_oilplate.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Oil Plate"
+})

@@ -1,0 +1,20 @@
+
+minetest.register_craftitem("electricforge:controlpanel", {
+	image = "if_controlpanel.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Control Panel"
+})
+
+minetest.register_craftitem("electricforge:electrodrill", {
+	image = "if_electrodrill.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Electro Drill"
+})
+
+minetest.register_craftitem("electricforge:quarrydrill", {
+	image = "quarrydrill.png",
+	on_place_on_ground = minetest.craftitem_place_item,
+	description = "Quarry Drill"
+})
+
+

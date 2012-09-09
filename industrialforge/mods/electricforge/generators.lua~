@@ -1,0 +1,15 @@
+minetest.register_node("electricforge:solar", {
+    description = "Solar Generator",
+    tile_images = {"solarpanel.png"},	
+    is_generator = true,
+    e_max_level = 10,
+});
+minetest.register_abm({
+    nodenames = {"electricforge:solar"},
+    interval = 10,
+    chance = 0,
+    action = function(pos, node, active_object_count, active_object_count_wider)
+		local pnode  = minetest.env:get_node(pos)
+                   minetest.env:generate_energy(pos)
+		end
+});

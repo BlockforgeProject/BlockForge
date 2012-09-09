@@ -1,0 +1,6 @@
+minetest.register_on_placenode( placelamp )
+minetest.register_on_punchnode( activatequarry )
+minetest.register_on_punchnode( activateraffinery )
+minetest.register_on_punchnode( activatemacerator )
+
+
